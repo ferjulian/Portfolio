@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-scroll';
 import { StyledNavbar } from './styles/Navbar.styled'
 import BurgerButton from './BurgerButton';
+import { motion } from 'framer-motion';
 
 
 
@@ -16,7 +17,7 @@ const handleClick = () =>{
 
 return(
     <StyledNavbar>
-        <div className={`${clicked? 'showLinks-mobile': ''} hideLinks-mobile`}>
+        <div className={`link-wrapper ${clicked? 'showLinks-mobile': ''}`}>
         <Link to="1" onClick={ e => handleClick()} duration={1000}>Home</Link>
         <Link to="2" onClick={ e => handleClick()} duration={1000}>Projects</Link>
         <Link to="3" onClick={ e => handleClick()} duration={1000}>Contact</Link>
