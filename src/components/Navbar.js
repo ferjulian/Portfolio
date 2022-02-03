@@ -19,8 +19,9 @@ return(
     <StyledNavbar>
         <div className={`link-wrapper ${clicked? 'showLinks-mobile': ''}`}>
         <Link to="1" onClick={ e => handleClick()} duration={1000}>Home</Link>
-        <Link to="2" onClick={ e => handleClick()} duration={1000}>Projects</Link>
-        <Link to="3" onClick={ e => handleClick()} duration={1000}>Contact</Link>
+        <Link to="2" onClick={ e => handleClick()} duration={1000}>Skills</Link>
+        <Link to="3" onClick={ e => handleClick()} duration={1000}>Projects</Link>
+        <Link to="4" onClick={ e => handleClick()} duration={1000}>Contact</Link>
         <div className="animation start-home"></div>
         </div>
         <BurgerButton clicked={clicked} handleClick={handleClick} />

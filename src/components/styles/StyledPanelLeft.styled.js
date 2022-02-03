@@ -5,7 +5,7 @@ export const StyledPanelLeft = styled.div`
 width: 50%;
 height: 100%;
 display: flex;
-justify-content: center;
+justify-content: end;
 align-items: center;
 overflow: hidden;
 
@@ -13,7 +13,7 @@ overflow: hidden;
     content:'';
     display: block;
     position: absolute;
-    left: 60px;
+    left: 160px;
     height: 50%;
     width: 10%;
     background-image: linear-gradient(to right top, #aacec4, #bed9c7, #d3e3cc, #e9ecd4, #fef6df);
@@ -46,7 +46,8 @@ overflow: hidden;
 
 
 .header_icon-container > i {
-    font-size: 1.2rem;
+    font-size: 1.7rem;  
 }
+
 
 `

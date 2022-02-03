@@ -27,7 +27,7 @@ z-index: 3;
     bottom: 0;
     left:10px;
     z-index: -1;
-    background-color: #aacec4;
+    background-color: rgba(0, 255, 255, 0.384);
     width: 0px;
     transition: all .5s ease 0s;
 }
