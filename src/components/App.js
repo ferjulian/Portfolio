@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Header from './Header'
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 import { GlobalStyles } from './styles/Global'
 
 const App = () =>{
@@ -15,8 +16,7 @@ return(
         <Header />
         <Skills />
         <Projects />
-        <section id="4" className="vh-100 bg-success">
-        </section>
+        <Contact />
     </div>
 );
 }

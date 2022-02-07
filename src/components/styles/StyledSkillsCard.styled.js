@@ -11,5 +11,4 @@ top: 0px;
 width: 15%;
 height: 80%;
 overflow: hidden;
-
 `
