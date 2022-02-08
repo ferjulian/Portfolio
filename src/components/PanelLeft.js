@@ -8,9 +8,17 @@ const PanelLeft = () => {
                 <StyledPanelLeft>
                 <div className="header_wrapper">
                     <div className="header_icon-container">
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://instagram.com/ferjulian__" target="_blank">
+                    <i class="fab fa-instagram"></i>      
+                    </a>
+                    <a href="https://github.com/ferjulian" target="_blank">
                     <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ferjulian" target="_blank">
                     <i class="fab fa-linkedin"></i>
+                    </a>
+                    
+                    
 
 
 

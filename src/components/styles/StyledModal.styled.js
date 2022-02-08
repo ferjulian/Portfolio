@@ -33,7 +33,7 @@ export const StyledModal = styled.div`
         right: 0px;
         height: 100%;
         width: 30%;
-        background-color: black;
+        background-image: linear-gradient(to right top, #aacec4, #bed9c7, #d3e3cc, #e9ecd4, #fef6df);
         z-index: 0;
     }
 
@@ -45,8 +45,10 @@ export const StyledModal = styled.div`
         height: 70%;
     }
 
+
+    
     .info-container::before {
-        content:'01';
+        content:'0${(props) => props.id}';
         position: absolute;
         top: 18%;
         display:block;
@@ -78,5 +80,14 @@ export const StyledModal = styled.div`
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     }
 
+    .action-button {
+        background-color:#3d4b47;
+        color: white;
+        margin-right: 5px;
+    }
+
+    .action-button > a > i {
+        margin-right: 5px;
+    }
     
 `;

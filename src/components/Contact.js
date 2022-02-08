@@ -2,8 +2,10 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { StyledContact } from './styles/StyledContact.styled';
 
-
 const Contact = () => {
+
+    
+    console.log(process.env);
 
     const form = useRef();
 
@@ -13,7 +15,7 @@ const Contact = () => {
 
         e.preventDefault();
 
-        emailjs.sendForm('service_2bjvieg', 'template_m7dswm7', form.current, 'user_PWZWIR81JJ518kEw4WF61')
+        emailjs.sendForm('service_2bjvieg', 'template_m7dswm7', form.current, process.env.REACT_APP_API_KEY)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

@@ -34,20 +34,23 @@ z-index: 3;
 
 
 a:nth-child(1):hover~.animation{
-	width: 45px;
+	width: 50px;
     left:10px;
 }
  a:nth-child(2):hover~.animation{
-	width: 60px;
-	left: 70px;
+	width: 50px;
+	left: 75px;
 }
 
  a:nth-child(3):hover~.animation{
 	width: 60px;
-	left: 148px;
+	left: 143px;
 }
 
-
+a:nth-child(4):hover~.animation{
+	width: 60px;
+	left: 230px;
+}
 
 /*---- Media Queries ---*/
 

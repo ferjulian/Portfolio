@@ -45,9 +45,21 @@ overflow: hidden;
 }
 
 
-.header_icon-container > i {
-    font-size: 1.7rem;  
+.header_icon-container {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    width: 30%;
 }
+
+.header_icon-container > a {
+    font-size: 2rem;  
+    color: black;
+}
+
+.header_icon-container > a:hover  {
+color: grey;
+} 
 
 
 `

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledPrevCard = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 position: relative;
 left:0px;
 width: 350px;
@@ -10,13 +13,23 @@ background-color: #aacec4;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
 .details{
-    display:none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    border: 0;
+    color: white;
+    background-color:#aacec4;
+    
+   
 }
 
+.details:hover{
+    background-color:#3d4b47;
+}
 
 :hover .details {
-    display: inline-block;
-    position: relative;  
+    position: relative; 
+    opacity:1; 
+    z-index: 5;
 }
 
 .image {
