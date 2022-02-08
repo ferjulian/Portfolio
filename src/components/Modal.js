@@ -8,11 +8,24 @@ const Modal = (props) => {
         props.handleModal();
     }
 
+    const image = require(`../assets/${props.project.image}`);
+
     return ReactDOM.createPortal(
         <StyledModal>
             <div className="modal-container">
-            <button onClick={() => handleClick()}>Close</button>
+            <div className="info-container">
             <h1>{props.project.name}</h1>
+            <p> Este project esta realizado en React y nos deja crear un equipo de superheroes blabla blabla stats blabla</p>
+            <span className="wrapper-actions">
+            <button><a>Github</a></button>
+            <button><a>View Live</a></button>
+            <button onClick={() => handleClick()}>Close</button>
+            
+            </span>
+            <span className="tecnologies-container">Java - React - FramerMotion - Lombok</span>
+            </div>
+
+            <img src={image}></img>
             </div>   
         </StyledModal>,
         document.querySelector('#modal')

@@ -16,7 +16,7 @@ const PrevCard = (props) => {
 ;
 
     return (
-        <StyledPrevCard>
+        <StyledPrevCard title={props.project.name}>
             <img className="image" src={image}></img>
             <button onClick={() => handleClick()}className="details">More Details</button>
         </StyledPrevCard>
